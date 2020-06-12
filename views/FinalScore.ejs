@@ -1,0 +1,26 @@
+<%- include('includes/head.ejs') %>
+<% if(user.Score === 6) {%>
+    <div class="jumbotron text-center">
+
+        <h1 class="display-4"><%= viewTitle %></h1>
+        <h1 class="display-3">Congratulations</h1>
+        <p class="lead"><%= user.FullName %> score is  <%= user.Score %></p>
+        <hr>
+        <p class="lead">
+            <a class="btn btn-primary btn-sm" href="/" role="button">Do You Want to Play Again</a>
+        </p>
+    </div>
+<% } else {%>
+<div class="jumbotron text-center">
+
+    <h1 class="display-4"><%= viewTitle %></h1>
+    <h1 class="display-3">Thank You!</h1>
+    <p class="lead"><%= user.FullName %> score is  <%= user.Score %></p>
+    <small>Better Luck Next Time</small>
+    <hr>
+    <p class="lead">
+        <a class="btn btn-primary btn-sm" href="/" role="button">Do You Want to Try Again</a>
+    </p>
+</div>
+<% } %>
+<%- include('includes/end.ejs') %>

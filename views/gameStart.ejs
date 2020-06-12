@@ -1,0 +1,14 @@
+<%- include("includes/head.ejs") %>
+<h1 class="text-center font-weight-bold" style="font-size: 2rem; color: #c1f7ff"><%= viewTitle %></h1>
+<div class="d-flex justify-content-between flex-wrap" style="padding-top: 4rem; padding-left: 13rem">
+    <% for(let colors of color) {%>
+    <form action="/level2" method="post" style="width: 40%" >
+        <input type="hidden" name="color" value="<%= colors.color %>" />
+        <input type="hidden" name="value" value="<%= colors.value %>" />
+        <button type="submit" class="btn btn-primary" style="background-color: <%= colors.color %>;width: 50%; padding: 2rem; border-radius: 6px;"><%= colors.color %></button>
+    </form>
+    <% } %>
+</div>
+<%- include('includes/end.ejs') %>
+
+

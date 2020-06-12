@@ -1,0 +1,43 @@
+<%- include('includes/head.ejs') %>
+<!--<form action="/level1" method="post">-->
+<!--    <div class="form-group d-flex flex-column bd-highlight mb-3" >-->
+<!--        <label for="exampleInputEmail1" class="text-center font-weight-bold" ><%= viewTitle %></label>-->
+<!--        <input type="text" class="form-control" id="name" name="FullName" aria-describedby="emailHelp" placeholder="Enter email" >-->
+<!--    </div>-->
+<!--    <div class="d-flex flex-column bd-highlight mb-3">-->
+<!--        <button type="submit" class="btn btn-primary col-4 " >Submit</button>-->
+<!--    </div>-->
+<!--</form>-->
+<h1 class="text-center" style="color: white"><%= viewTitle %></h1>
+<div class="d-flex justify-content-between">
+    <div style="background-color: black; width: 8%; padding: 2rem; border-radius: 6px;color: white;">1</div>
+    <div style="background-color: blue; width: 8%; padding: 2rem; border-radius: 6px;">2</div>
+    <div style="background-color: green; width: 8%; padding: 2rem; border-radius: 6px;">3</div>
+    <div style="background-color: red; width: 8%; padding: 2rem; border-radius: 6px;">4</div>
+    <div style="background-color: yellow; width: 8%; padding: 2rem; border-radius: 6px;">5</div>
+    <div style="background-color: aqua; width: 8%; padding: 2rem; border-radius: 6px;">6</div>
+    <div style="background-color: white; width: 8%; padding: 2rem; border-radius: 6px;">7</div>
+    <div style="background-color: orange; width: 8%; padding: 2rem; border-radius: 6px;">8</div>
+    <div style="background-color: pink; width: 8%; padding: 2rem; border-radius: 6px;">9</div>
+    <div style="background-color: coral; width: 8%; padding: 2rem; border-radius: 6px;">10</div>
+</div>
+<h6 style="padding-top: 2rem" class="text-center">Remember these colors</h6>
+<h6 class="text-center">Lets Check Your Memory</h6>
+
+<div class="wrapper fadeInDown">
+
+    <div id="formContent">
+        <!-- Tabs Titles -->
+
+        <!-- Icon -->
+
+        <!-- Login Form -->
+        <form action="/level1" method="post" class="formfront">
+            <input type="text" id="login" class="fadeIn second" name="FullName" placeholder="Enter Name Please">
+            <button type="submit" class="fadeIn fourth btn btn-primary" style="margin-top: 3rem" value="Log In">Submit</button>
+        </form>
+
+
+    </div>
+</div>
+<%- include('includes/end.ejs') %>

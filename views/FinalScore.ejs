@@ -1,9 +1,10 @@
 <%- include('includes/head.ejs') %>
-<% if(user.Score === 6) {%>
+<% if(user.Score === 60) {%>
     <div class="jumbotron text-center">
+        <h1 class="display-3">Congratulations</h1>
 
         <h1 class="display-4"><%= viewTitle %></h1>
-        <h1 class="display-3">Congratulations</h1>
+
         <p class="lead"><%= user.FullName %> score is  <%= user.Score %></p>
         <hr>
         <p class="lead">

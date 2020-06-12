@@ -57,10 +57,10 @@ exports.postlevel1= (req, res, next) =>{
                         console.log("fab" + fab[i]);
                         console.log("fabval" + i);
                         if (fab[i] === col.value) {
-                            score = score + 1;
+                            score = score + 10;
                             i = i + 1;
                         } else {
-                            score = score - 1;
+                            score = score - 10;
                             i = i + 1;
                         }
                         console.log(score);

@@ -3,6 +3,7 @@ const app = express();
 const mongoose = require('mongoose');
 const bodyparse = require('body-parser');
 const path = require('path');
+const PORT = process.env.PORT || 3000;
 
 const MONGODB_URI = "mongodb://localhost:27017/guesscolor";
 
@@ -23,7 +24,7 @@ mongoose.connect(MONGODB_URI,
     {userNewUrlParser: true},
     () =>  console.log('Connected to DB!')
 );
-app.listen(4000);
+app.listen(PORT);
 
 
 
